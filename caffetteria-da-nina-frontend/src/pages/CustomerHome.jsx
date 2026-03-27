@@ -13,6 +13,7 @@ import {
 import api from "../api/axiosConfig";
 import { AuthContext } from "../context/AuthContext";
 import "../styles/customer.css";
+
 export default function CustomerHome() {
   const { user, logout } = useContext(AuthContext);
   const [products, setProducts] = useState([]);
@@ -234,15 +235,29 @@ export default function CustomerHome() {
               </Col>
             )}
           </Row>
+
           {orderItems.length > 0 && (
             <Button
               onClick={sendOrder}
-              className="loating-order-btn d-flex align-items-center gap-2">
+              className="loating-order-btn d-flex align-items-center gap-2"
+              style={{
+                position: "fixed",
+                bottom: "20px",
+                right: "20px",
+                zIndex: 1000,
+                padding: "15px 25px",
+                borderRadius: "50px",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+                backgroundColor: "#e0e0e0", // Grigio chiaro
+                color: "#333", // Testo grigio scuro per contrasto
+                border: "1px solid #ccc", // Bordo grigio medio opzionale
+              }}>
               INVIA ORDINE ({orderItems.reduce((a, i) => a + i.quantity, 0)})
             </Button>
           )}
         </Container>
       </main>
+
       <footer className="text-light mt-auto">
         <div style={{ backgroundColor: "#3f2a14", padding: "40px 0 20px" }}>
           <Container>

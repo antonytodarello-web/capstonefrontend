@@ -70,9 +70,7 @@ export default function EmployeeDashboard() {
     <Container fluid className="py-4">
       <Navbar expand="lg" className="bg-light shadow-sm px-3 mb-4">
         <Container fluid>
-          <Navbar.Brand className="fw-bold">
-            ☕ Caffetteria da Nina
-          </Navbar.Brand>
+          <Navbar.Brand className="fw-bold">Caffetteria da Nina</Navbar.Brand>
         </Container>
       </Navbar>
 
@@ -152,7 +150,7 @@ export default function EmployeeDashboard() {
                 </ul>
 
                 {o.status === "DELIVERED" ? (
-                  <div className="text-success fw-bold">✅ Consegnato</div>
+                  <div className="text-success fw-bold">Consegnato</div>
                 ) : (
                   <Button
                     size="sm"

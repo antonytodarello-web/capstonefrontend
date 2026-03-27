@@ -209,7 +209,7 @@ export default function AdminDashboard() {
                     <div className="fw-bold">{p.name}</div>
                   </td>
                   <td>{p.category ? p.category.type : "---"}</td>
-                  <td>€ {p.price.toFixed(2)}</td>
+                  <td>€{p.price.toFixed(2)}</td>
                   <td>
                     <Button
                       size="sm"
@@ -257,7 +257,7 @@ export default function AdminDashboard() {
             className="align-middle text-center bg-white shadow-sm">
             <thead style={{ backgroundColor: "#3f2a14", color: "#fff" }}>
               <tr>
-                <th>Nome Completo</th>
+                <th>Nome Completo</th>
                 <th>Email</th>
                 <th>Azioni</th>
               </tr>

@@ -100,15 +100,14 @@ footer .social-icons {
 }
 
 :root {
-  --bg-dark-wall: #2C2E31;      /* Grigio scuro muro */
-  --bg-crema: #F5EFE6;         /* Sfondo card e bottoni */
-  --accent-verde: #4F6F52;     /* Verde rampicanti/dettagli */
-  --text-dark: #1A1A1B;        /* Testo scuro */
-  --footer-wood: #E8DFCA;      /* Legno chiaro footer */
+  --bg-dark-wall: #2C2E31; 
+  --bg-crema: #F5EFE6;        
+  --accent-verde: #4F6F52;     
+  --text-dark: #1A1A1B;     
+  --footer-wood: #E8DFCA;      
   --shadow-soft: 0 8px 24px rgba(0,0,0,0.2);
 }
 
-/* Card del Menu e della Gestione */
 .card-nina {
   background-color: var(--bg-crema);
   border-radius: 15px;
@@ -117,7 +116,6 @@ footer .social-icons {
   border: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Footer Chiaro */
 .footer-nina {
   background-color: var(--footer-wood);
   padding: 40px;
@@ -127,7 +125,7 @@ footer .social-icons {
 
 body {
   margin: 0;
-  font-family: 'Playfair Display', serif; /* Un font elegante per la storicità */
+  font-family: 'Playfair Display', serif; 
   background-color: var(--bg-dark-wall);
   color: var(--text-dark);
 }
