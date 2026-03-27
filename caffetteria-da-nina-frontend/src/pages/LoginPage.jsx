@@ -14,7 +14,6 @@ export default function LoginPage() {
       const { token, role, fullname, id } = res.data;
       login(token, role, fullname, id);
 
-      // 🔁 Redirect in base al ruolo
       if (role.toUpperCase() === "ADMIN") window.location.href = "/admin";
       else if (role.toUpperCase() === "EMPLOYEE")
         window.location.href = "/employee";
@@ -44,7 +43,7 @@ export default function LoginPage() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit" className="btn auth-btn w-100">
+        <button type="submit" className="form-control mb-3">
           Accedi
         </button>
       </form>

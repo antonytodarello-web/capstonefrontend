@@ -41,7 +41,9 @@ export default function RegisterPage() {
   };
 
   return (
-    <Container className="auth-box">
+    <Container
+      className="auth-box"
+      style={{ maxWidth: "400px", margin: "50px auto" }}>
       <h2 className="text-center mb-4">Registrati come Cliente</h2>
 
       {error && <Alert variant="danger">{error}</Alert>}
