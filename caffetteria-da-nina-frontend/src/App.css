@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  } 
+}
+
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #3f2a14;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+footer h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin-bottom: 0.2rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #d4b483;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+:root {
+  --bg-dark-wall: #2C2E31;      /* Grigio scuro muro */
+  --bg-crema: #F5EFE6;         /* Sfondo card e bottoni */
+  --accent-verde: #4F6F52;     /* Verde rampicanti/dettagli */
+  --text-dark: #1A1A1B;        /* Testo scuro */
+  --footer-wood: #E8DFCA;      /* Legno chiaro footer */
+  --shadow-soft: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+/* Card del Menu e della Gestione */
+.card-nina {
+  background-color: var(--bg-crema);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Footer Chiaro */
+.footer-nina {
+  background-color: var(--footer-wood);
+  padding: 40px;
+  margin-top: auto;
+  border-top: 3px solid var(--accent-verde);
+}
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif; /* Un font elegante per la storicità */
+  background-color: var(--bg-dark-wall);
+  color: var(--text-dark);
+}
+
+.main-layout {
+  background-image: url('./assets/muro-grigio-scuro.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

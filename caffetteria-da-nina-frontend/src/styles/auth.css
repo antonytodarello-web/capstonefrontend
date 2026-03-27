@@ -1,0 +1,14 @@
+.auth-box {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: var(--bg-light);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.auth-btn {
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+}

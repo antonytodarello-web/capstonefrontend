@@ -1,0 +1,19 @@
+.admin-table {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admin-header {
+  background-color: var(--primary);
+  color: white;
+}
+
+.admin-btn {
+  background-color: var(--secondary);
+  border: none;
+}
+
+.admin-btn:hover {
+  background-color: #b59064;
+}

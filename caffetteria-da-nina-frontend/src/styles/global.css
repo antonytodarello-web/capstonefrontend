@@ -1,0 +1,26 @@
+:root {
+  --primary: #3f2a14;
+  --secondary: #c7a97d;
+  --bg-light: #f5f0e6;
+  --card-bg: #fff9f3;
+  --shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--bg-light);
+  color: var(--primary);
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.card-hover {
+  transition: 0.2s;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
